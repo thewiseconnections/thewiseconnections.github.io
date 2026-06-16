@@ -1,0 +1,119 @@
+{
+  "title": "Supply Chain Career Explorer",
+  "subtitle": "Answer a few quick questions to discover which supply chain path might fit you best.",
+  "intro": "There is no single “right” career in supply chain. This short quiz highlights roles where your interests and strengths may align—from planning and analytics to logistics and procurement. Use it as a conversation starter, not a final decision.",
+  "careers": {
+    "procurement": {
+      "title": "Procurement & Strategic Sourcing",
+      "tagline": "You build value through relationships and smart buying decisions.",
+      "description": "Procurement professionals negotiate with suppliers, manage contracts, and ensure the right materials and services arrive at the right cost and quality. You thrive when balancing analytics with relationship-building.",
+      "exampleRoles": ["Buyer", "Category Manager", "Strategic Sourcing Analyst", "Supplier Relationship Manager"],
+      "skills": ["Negotiation", "Cost analysis", "Supplier management", "Contract literacy"]
+    },
+    "logistics": {
+      "title": "Logistics & Transportation",
+      "tagline": "You keep products moving efficiently across the network.",
+      "description": "Logistics focuses on how goods flow from origin to customer—modes of transport, routing, carrier management, and delivery performance. If you like solving puzzles under time pressure, this path offers constant action.",
+      "exampleRoles": ["Logistics Coordinator", "Transportation Analyst", "Fleet Manager", "Last-Mile Planner"],
+      "skills": ["Routing", "Carrier management", "Cost-to-serve", "Problem-solving under deadlines"]
+    },
+    "warehousing": {
+      "title": "Warehousing & Distribution",
+      "tagline": "You optimize what happens inside the four walls.",
+      "description": "Distribution centers are the heartbeat of fulfillment. Roles here cover layout, inventory accuracy, picking/packing, automation, and safety—turning storage into speed and reliability.",
+      "exampleRoles": ["Warehouse Supervisor", "Fulfillment Manager", "Inventory Control Specialist", "Operations Engineer"],
+      "skills": ["Layout & flow", "Inventory accuracy", "Lean operations", "Team leadership"]
+    },
+    "planning": {
+      "title": "Demand Planning & S&OP",
+      "tagline": "You connect forecasts, sales, and operations into one plan.",
+      "description": "Planners predict what customers will need and align production, inventory, and sales. Sales & Operations Planning (S&OP) brings cross-functional teams together to balance service, cost, and capacity.",
+      "exampleRoles": ["Demand Planner", "Supply Planner", "S&OP Analyst", "Master Scheduler"],
+      "skills": ["Forecasting", "Excel / planning systems", "Cross-functional communication", "Scenario thinking"]
+    },
+    "analytics": {
+      "title": "Supply Chain Analytics",
+      "tagline": "You turn data into decisions the business can act on.",
+      "description": "Analytics roles use data to improve visibility, predict disruptions, and measure performance. You might build dashboards, run models, or dig into KPIs that leaders use every week.",
+      "exampleRoles": ["Supply Chain Analyst", "Business Intelligence Analyst", "Data Scientist", "Performance Manager"],
+      "skills": ["SQL / Excel", "Visualization", "Statistical thinking", "Storytelling with data"]
+    },
+    "operations": {
+      "title": "Operations & Production",
+      "tagline": "You improve how products are made and delivered at scale.",
+      "description": "Operations managers oversee plants, production lines, or end-to-end processes—quality, throughput, continuous improvement, and people leadership on the floor.",
+      "exampleRoles": ["Operations Manager", "Production Planner", "Plant Supervisor", "Continuous Improvement Lead"],
+      "skills": ["Process improvement", "Quality systems", "Capacity planning", "Leadership"]
+    },
+    "sustainability": {
+      "title": "Sustainability & Responsible Supply Chain",
+      "tagline": "You help organizations do well by doing good.",
+      "description": "This growing field addresses carbon footprint, ethical sourcing, circular economy, and ESG reporting. You connect environmental and social goals with everyday supply chain choices.",
+      "exampleRoles": ["Sustainability Analyst", "Responsible Sourcing Manager", "ESG Reporting Specialist", "Circular Economy Coordinator"],
+      "skills": ["Lifecycle thinking", "Supplier audits", "Regulations & standards", "Stakeholder engagement"]
+    },
+    "consulting": {
+      "title": "Consulting & Project Leadership",
+      "tagline": "You love variety, client impact, and solving new problems.",
+      "description": "Consultants and project leads work across industries—designing network strategy, implementing systems, or leading transformation. Ideal if you enjoy learning fast and presenting to executives.",
+      "exampleRoles": ["Supply Chain Consultant", "Implementation Lead", "Network Design Analyst", "Change Manager"],
+      "skills": ["Presentation", "Project management", "Broad industry exposure", "Structured problem-solving"]
+    }
+  },
+  "questions": [
+    {
+      "text": "What kind of work sounds most exciting to you?",
+      "answers": [
+        { "text": "Negotiating deals and building supplier partnerships", "scores": { "procurement": 3, "consulting": 1 } },
+        { "text": "Coordinating trucks, ships, or routes to hit delivery goals", "scores": { "logistics": 3, "operations": 1 } },
+        { "text": "Improving how a warehouse or fulfillment center runs", "scores": { "warehousing": 3, "operations": 2 } },
+        { "text": "Forecasting demand and balancing supply with sales", "scores": { "planning": 3, "analytics": 1 } }
+      ]
+    },
+    {
+      "text": "Which class project would you enjoy most?",
+      "answers": [
+        { "text": "Building a dashboard or model from a messy dataset", "scores": { "analytics": 3, "planning": 2 } },
+        { "text": "Mapping a greener sourcing strategy for a product line", "scores": { "sustainability": 3, "procurement": 1 } },
+        { "text": "Redesigning a factory or line to reduce waste and delays", "scores": { "operations": 3, "warehousing": 1 } },
+        { "text": "Pitching a network redesign to a leadership team", "scores": { "consulting": 3, "analytics": 1 } }
+      ]
+    },
+    {
+      "text": "What is your strongest skill right now?",
+      "answers": [
+        { "text": "Numbers, spreadsheets, and spotting patterns", "scores": { "analytics": 2, "planning": 2 } },
+        { "text": "Communication and influencing others", "scores": { "procurement": 2, "consulting": 2 } },
+        { "text": "Organizing people and processes on the ground", "scores": { "warehousing": 2, "operations": 2 } },
+        { "text": "Staying calm when plans change at the last minute", "scores": { "logistics": 3, "operations": 1 } }
+      ]
+    },
+    {
+      "text": "What impact do you want to have in your career?",
+      "answers": [
+        { "text": "Reduce cost and risk while keeping partners strong", "scores": { "procurement": 2, "analytics": 1 } },
+        { "text": "Get the right product to the right place on time", "scores": { "logistics": 2, "warehousing": 2 } },
+        { "text": "Help the company plan ahead with fewer surprises", "scores": { "planning": 3 } },
+        { "text": "Make supply chains more ethical and sustainable", "scores": { "sustainability": 3, "procurement": 1 } }
+      ]
+    },
+    {
+      "text": "Which work environment appeals to you?",
+      "answers": [
+        { "text": "Mix of office and site visits with different clients", "scores": { "consulting": 3, "logistics": 1 } },
+        { "text": "Fast-paced operations floor or distribution center", "scores": { "warehousing": 2, "operations": 2 } },
+        { "text": "Collaborative planning meetings with sales and ops", "scores": { "planning": 2, "sustainability": 1 } },
+        { "text": "Quiet focus time with data and tools", "scores": { "analytics": 3, "planning": 1 } }
+      ]
+    },
+    {
+      "text": "Pick the headline you would be proudest to own:",
+      "answers": [
+        { "text": "“Cut transportation spend 12% without hurting service”", "scores": { "logistics": 3, "analytics": 1 } },
+        { "text": "“Launched ethical sourcing standards across our top suppliers”", "scores": { "sustainability": 3 } },
+        { "text": "“Improved forecast accuracy and freed $2M in inventory”", "scores": { "planning": 2, "analytics": 2 } },
+        { "text": "“Led a cross-site productivity program that scaled nationally”", "scores": { "consulting": 2, "operations": 2 } }
+      ]
+    }
+  ]
+}

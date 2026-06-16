@@ -7,52 +7,43 @@
     <link rel="icon" href="../images/WISE_student_logo-color.jpg" type="image/jpeg">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body data-page="chapters">
     <nav class="navbar">
         <div class="container">
             <div class="logo">
                 <img src="../images/WISE_student_logo-color.jpg" alt="WISE Logo" class="logo-img">
-                <p class="tagline">Women Impacting Supply Chain Excellence</p>
+                <p class="tagline" data-site="tagline">Creating Connections. Growing Leaders. Advancing Supply Chains.</p>
             </div>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="chapters.html" class="active">Chapters</a></li>
                 <li><a href="conferences.html">Conferences</a></li>
                 <li><a href="advisory-board.html">Advisory Board</a></li>
                 <li><a href="newsletters.html">Newsletters</a></li>
+                <li><a href="career-explorer.html">Career Explorer</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="menu-toggle" id="menuToggle">☰</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
         </div>
     </nav>
 
     <main class="container">
         <section class="about">
             <h2>WISE Chapters</h2>
-            <p>WISE has chapters at 10 universities across the United States. Our chapters foster professional development, networking, and knowledge sharing among women in supply chain management.</p>
+            <p>WISE chapters foster professional development, networking, and knowledge sharing among supply chain students.</p>
         </section>
 
         <section class="chapters-section">
             <h2>Universities with WISE Chapters</h2>
-            <div class="university-grid">
-                <div class="university-tile">Auburn University</div>
-                <div class="university-tile">Colorado State University</div>
-                <div class="university-tile">Georgia Southern University</div>
-                <div class="university-tile">Iowa State University</div>
-                <div class="university-tile">Lehigh University</div>
-                <div class="university-tile">Michigan State University</div>
-                <div class="university-tile">Mississippi State University</div>
-                <div class="university-tile">University of Arkansas</div>
-                <div class="university-tile">University of Kansas</div>
-                <div class="university-tile">Western Michigan University</div>
-            </div>
+            <div class="university-grid" id="university-grid"></div>
         </section>
 
         <section class="chapters-section">
             <h2>Chapter Resources</h2>
             <div class="resource-box">
                 <h3>WISE Chapter Resource Guide</h3>
-                <p>Access comprehensive guidance on chapter structure, programming ideas, meeting formats, leadership models, and best practices for fostering an inclusive community.</p>
+                <p>Guidance on chapter structure, programming ideas, meeting formats, leadership models, and best practices.</p>
                 <p><a href="../Resources/WISEChapterResouceGuide%20copy.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Resource Guide (PDF)</a></p>
             </div>
         </section>
@@ -65,5 +56,6 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/content.js"></script>
 </body>
 </html>

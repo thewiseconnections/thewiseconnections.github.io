@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advisory Board - WISE</title>
+    <title>Career Explorer - WISE</title>
     <link rel="icon" href="../images/WISE_student_logo-color.jpg" type="image/jpeg">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body data-page="advisory-board">
+<body data-page="career-explorer">
     <nav class="navbar">
         <div class="container">
             <div class="logo">
@@ -19,31 +19,21 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="chapters.html">Chapters</a></li>
                 <li><a href="conferences.html">Conferences</a></li>
-                <li><a href="advisory-board.html" class="active">Advisory Board</a></li>
+                <li><a href="advisory-board.html">Advisory Board</a></li>
                 <li><a href="newsletters.html">Newsletters</a></li>
-                <li><a href="career-explorer.html">Career Explorer</a></li>
+                <li><a href="career-explorer.html" class="active">Career Explorer</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container quiz-page">
         <section class="about">
-            <h2>Advisory Board</h2>
-            <p>Students from different universities connect and collaborate to guide WISE's growth nationwide.</p>
+            <h2>Find Your Supply Chain Path</h2>
+            <p>Not sure which area of supply chain fits you? Take this quick quiz to explore careers in procurement, logistics, planning, analytics, and more.</p>
         </section>
-
-        <section class="advisory-section">
-            <h2>Current Advisory Board (2026)</h2>
-            <div class="board-grid" id="board-grid"></div>
-        </section>
-
-        <section class="advisory-section">
-            <h2>Past Advisory Board Members</h2>
-            <p>We are grateful for the contributions of our past advisory board members who have helped shape WISE.</p>
-            <div class="past-board-container" id="past-board-container"></div>
-        </section>
+        <div id="career-quiz" class="quiz-container" aria-live="polite"></div>
     </main>
 
     <footer>
@@ -54,5 +44,6 @@
 
     <script src="../js/script.js"></script>
     <script src="../js/content.js"></script>
+    <script src="../js/career-quiz.js"></script>
 </body>
 </html>

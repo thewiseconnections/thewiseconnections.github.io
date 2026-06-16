@@ -6,29 +6,38 @@ A modern, responsive website for the Women Impacting Supply Chain Excellence clu
 
 ```
 WISE Website/
+├── content/             # Editable data (CSV + site.json) — see CONTENT-EDITING-GUIDE.md
 ├── index.html           # Home page
-├── css/
-│   └── styles.css      # Main stylesheet with responsive design
+├── css/styles.css
 ├── js/
-│   ├── script.js       # Main JavaScript for navigation and interactivity
-│   └── contact.js      # Contact form handling
-└── pages/
-    ├── chapters.html   # Chapters directory page
-    |__ What are WISE, WISE beyond and all called # WISE Beyond, WISE Foundation, can I get more details
-    ├── conferences.html # Past conferences and upcoming events
-    └── contact.html    # Contact form and chapter leadership directory, also social media handles
-    |--- Advisory Board and Dr. T info # thinking of storing every years board
-    |--- Newsletters # store all the edition of newsletter
-
+│   ├── script.js        # Navigation
+│   ├── content.js       # Loads content/ into pages
+│   └── contact.js
+├── pages/
+│   ├── about.html       # Our story, mission, values, founder quote
+│   ├── chapters.html
+│   ├── conferences.html
+│   ├── advisory-board.html
+│   ├── newsletters.html
+│   └── contact.html
+├── Resources/           # Excel masters, PDFs, photos
+└── scripts/sync-from-excel.py
 ```
 
 ## 🎯 Features
 
 ### Pages
-- **Home** - Welcome page with organization overview and key highlights
-- **Chapters** - Directory of all WISE chapters with details and membership information
-- **Conferences** - Archive of past conferences and upcoming events
-- **Contact** - Contact form and chapter leadership directory
+- **Home** - Why get involved, highlights, conference photos
+- **About** - Our story, mission, values, founder message
+- **Chapters** - Universities with WISE chapters
+- **Conferences** - Symposium details and photo gallery
+- **Advisory Board** - Current and past board members
+- **Newsletters** - WISE Connections archive
+- **Career Explorer** - Interactive quiz for supply chain career paths
+- **Contact** - Contact form and social links
+
+### Editing content (for non-developers)
+See **[CONTENT-EDITING-GUIDE.md](CONTENT-EDITING-GUIDE.md)**. Most lists come from CSV/Excel in `content/` and `Resources/` — no HTML editing required.
 
 ### Design Features
 - 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
