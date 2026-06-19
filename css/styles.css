@@ -5,12 +5,25 @@
 }
 
 :root {
-    --primary-color: #8B3A62;
-    --secondary-color: #2C3E50;
-    --accent-color: #E74C3C;
-    --light-bg: #F8F9FA;
-    --text-dark: #2C3E50;
+    /* Official WISE logo palette */
+    --wise-red: #9E2438;
+    --wise-purple: #311322;
+    --wise-gray: #424E59;
+    --wise-blue: #2C5162;
+
+    /* Site tokens — calm, brand-aligned */
+    --primary-color: var(--wise-red);
+    --secondary-color: var(--wise-purple);
+    --accent-color: var(--wise-blue);
+    --text-dark: var(--wise-gray);
+    --text-muted: #6B7785;
     --text-light: #FFFFFF;
+    --light-bg: #F7F8F9;
+    --border-color: #E4E7EA;
+    --primary-hover: #852032;
+    --accent-hover: #243F4D;
+    --shadow-soft: rgba(66, 78, 89, 0.08);
+    --shadow-medium: rgba(66, 78, 89, 0.14);
 }
 
 body {
@@ -74,8 +87,8 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-    opacity: 0.8;
-    border-bottom: 2px solid var(--accent-color);
+    opacity: 1;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.85);
     padding-bottom: 0.5rem;
 }
 
@@ -90,7 +103,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-color: var(--primary-color);
     color: var(--text-light);
     padding: 100px 20px;
     text-align: center;
@@ -126,13 +139,13 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--text-light);
 }
 
 .btn-primary:hover {
-    background-color: #c0392b;
-    transform: translateY(-2px);
+    background-color: var(--primary-hover);
+    transform: none;
 }
 
 .btn-secondary {
@@ -159,7 +172,17 @@ main {
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+.about h2::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
 }
 
 .about p {
@@ -174,7 +197,7 @@ main {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--primary-color);
+    color: var(--text-dark);
 }
 
 .cards-grid {
@@ -184,28 +207,29 @@ main {
 }
 
 .card {
-    background-color: var(--light-bg);
+    background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid #E0E0E0;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+    border: 1px solid var(--border-color);
 }
 
 .card:hover {
-    box-shadow: 0 5px 15px rgba(139, 58, 98, 0.2);
-    transform: translateY(-5px);
+    box-shadow: 0 4px 14px var(--shadow-soft);
+    border-color: #D5DAE0;
+    transform: none;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-size: 1.5rem;
 }
 
 .card .btn-primary {
     display: inline-block;
     margin-top: 0.5rem;
-}
-
-.card h3 {
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-    font-size: 1.5rem;
 }
 
 .card p {
@@ -253,7 +277,7 @@ main {
 .conf-photo:hover,
 .gallery-photo:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(139, 58, 98, 0.3);
+    box-shadow: 0 8px 20px rgba(66, 78, 89, 0.14);
 }
 
 .conference-photo-gallery {
@@ -279,7 +303,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--wise-gray);
     color: var(--text-light);
     text-align: center;
     padding: 2rem 0;
@@ -295,7 +319,7 @@ table {
 }
 
 table thead {
-    background-color: var(--primary-color);
+    background-color: var(--wise-gray);
     color: var(--text-light);
 }
 
@@ -364,20 +388,21 @@ table tbody tr:hover {
 }
 
 .chapter-card {
-    background-color: var(--light-bg);
+    background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 8px;
-    border-left: 5px solid var(--primary-color);
-    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
+    transition: box-shadow 0.25s ease;
 }
 
 .chapter-card:hover {
-    box-shadow: 0 5px 15px rgba(139, 58, 98, 0.2);
-    transform: translateY(-5px);
+    box-shadow: 0 4px 14px var(--shadow-soft);
+    transform: none;
 }
 
 .chapter-card h3 {
-    color: var(--primary-color);
+    color: var(--text-dark);
     margin-bottom: 1rem;
 }
 
@@ -395,19 +420,21 @@ table tbody tr:hover {
 }
 
 .university-tile {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    background-color: #FFFFFF;
+    color: var(--text-dark);
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
     font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--primary-color);
+    box-shadow: none;
 }
 
 .university-tile:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(139, 58, 98, 0.3);
+    box-shadow: 0 4px 12px var(--shadow-soft);
+    transform: none;
 }
 
 /* Resource Box */
@@ -504,7 +531,7 @@ table tbody tr:hover {
 .conference-item .year {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .conference-details {
@@ -569,8 +596,8 @@ table tbody tr:hover {
 }
 
 .board-member:hover {
-    box-shadow: 0 5px 15px rgba(139, 58, 98, 0.2);
-    transform: translateY(-3px);
+    box-shadow: 0 4px 14px var(--shadow-soft);
+    transform: none;
 }
 
 .member-info h3 {
@@ -587,7 +614,7 @@ table tbody tr:hover {
 
 .member-info .company {
     font-style: italic;
-    color: var(--secondary-color);
+    color: var(--text-muted);
     margin-bottom: 0.8rem;
 }
 
@@ -637,7 +664,7 @@ table tbody tr:hover {
 .dropdown-filter:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 5px rgba(139, 58, 98, 0.3);
+    box-shadow: 0 0 5px rgba(66, 78, 89, 0.14);
 }
 
 .past-board-period {
@@ -652,6 +679,19 @@ table tbody tr:hover {
     font-size: 1.3rem;
 }
 
+.board-group-photo {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#current-board-table {
+    margin-top: 1rem;
+}
+
 .past-board-table {
     width: 100%;
     border-collapse: collapse;
@@ -659,7 +699,7 @@ table tbody tr:hover {
 }
 
 .past-board-table thead {
-    background-color: var(--primary-color);
+    background-color: var(--wise-gray);
     color: var(--text-light);
 }
 
@@ -693,7 +733,7 @@ table tbody tr:hover {
 
 .board-photo-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(139, 58, 98, 0.3);
+    box-shadow: 0 8px 20px rgba(66, 78, 89, 0.14);
 }
 
 .board-photo {
@@ -728,11 +768,12 @@ table tbody tr:hover {
 }
 
 .mission-card {
-    background-color: var(--light-bg);
+    background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
-    border-top: 4px solid var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--accent-color);
 }
 
 .mission-card h3 {
@@ -747,25 +788,28 @@ table tbody tr:hover {
 
 /* Newsletters Page Styles */
 .newsletter-subscribe {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--text-light);
+    background-color: var(--light-bg);
+    color: var(--text-dark);
     padding: 3rem;
     border-radius: 8px;
     margin: 3rem 0;
     text-align: center;
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--primary-color);
 }
 
 .newsletter-subscribe h2 {
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: 2rem;
 }
 
 .subscribe-box {
     max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 8px;
+    border: 1px solid var(--border-color);
 }
 
 .subscribe-box p {
@@ -805,7 +849,7 @@ table tbody tr:hover {
     margin-right: 1.5rem;
     margin-bottom: 0.5rem;
     cursor: pointer;
-    color: var(--text-light);
+    color: var(--text-dark);
     font-weight: 500;
 }
 
@@ -836,18 +880,19 @@ table tbody tr:hover {
 }
 
 .newsletter-card {
-    background-color: var(--light-bg);
+    background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 8px;
-    border-top: 4px solid var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--accent-color);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
 .newsletter-card:hover {
-    box-shadow: 0 5px 15px rgba(139, 58, 98, 0.2);
-    transform: translateY(-5px);
+    box-shadow: 0 4px 14px var(--shadow-soft);
+    transform: none;
 }
 
 .newsletter-date {
@@ -919,7 +964,7 @@ table tbody tr:hover {
 }
 
 .archive-table thead {
-    background-color: var(--primary-color);
+    background-color: var(--wise-gray);
     color: var(--text-light);
 }
 
@@ -990,7 +1035,7 @@ table tbody tr:hover {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 5px rgba(139, 58, 98, 0.3);
+    box-shadow: 0 0 5px rgba(66, 78, 89, 0.14);
 }
 
 #formMessage {
@@ -1118,8 +1163,44 @@ table tbody tr:hover {
     margin-bottom: 1.5rem;
 }
 
-/* About page */
+/* Section headings — calm body, brand accents elsewhere */
+main h2,
+.advisory-section h2,
+.conference-highlights h2,
+.conference-photo-gallery h2,
+.newsletters-section h2,
+.newsletter-archive h2,
+.chapter-contacts h2,
+.advisory-info h2,
+.quiz-card h2,
+.map-controls-card label {
+    color: var(--text-dark);
+}
+
+main h3,
+.value-card h3,
+.chapter-card h3,
+.card h3,
+.conference-feature h3,
+.conference-details h3,
+.benefit h3,
+.member-info h3,
+.mission-card h3,
+.newsletter-card h3,
+.info-card h3,
+.info-box h3,
+.contact-form h2,
+.contact-info h2,
+.quiz-result-columns h3,
+.resource-box h3,
+.past-board-period h3,
+.photo-name {
+    color: var(--text-dark);
+}
+
 .story-content p {
+    margin-bottom: 1rem;
+}
     margin-bottom: 1rem;
 }
 
@@ -1131,10 +1212,11 @@ table tbody tr:hover {
 }
 
 .value-card {
-    background: var(--light-bg);
+    background: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
 }
 
 .value-card h3 {
@@ -1142,12 +1224,29 @@ table tbody tr:hover {
     margin-bottom: 0.5rem;
 }
 
+.founder-profile {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.founder-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    object-fit: cover;
+}
+
 .founder-quote {
     background: var(--light-bg);
     padding: 2rem;
     border-radius: 8px;
     border-left: 4px solid var(--accent-color);
-    margin-top: 1rem;
+    margin-top: 0;
+    flex: 1;
     font-style: italic;
 }
 
@@ -1160,6 +1259,52 @@ table tbody tr:hover {
 
 .section-link {
     margin-top: 1.5rem;
+}
+
+/* Advisory map */
+.map-page {
+    padding-top: 40px;
+}
+
+.map-controls-card,
+.map-card {
+    background: var(--light-bg);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.map-controls-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    align-items: center;
+}
+
+.map-controls-card label {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#map-year-filter {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    min-width: 180px;
+}
+
+.map-summary {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+#advisory-map {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
 }
 
 /* Career Explorer quiz */
@@ -1189,7 +1334,7 @@ table tbody tr:hover {
 .quiz-subtitle {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    color: var(--secondary-color);
+    color: var(--text-muted);
 }
 
 .quiz-meta {
@@ -1257,7 +1402,7 @@ table tbody tr:hover {
 .quiz-result-tagline {
     font-size: 1.15rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--accent-color);
     margin-bottom: 1rem;
 }
 
@@ -1318,7 +1463,7 @@ table tbody tr:hover {
 }
 
 .btn-quiz-primary:hover {
-    background-color: #6d2e4d;
+    background-color: var(--primary-hover);
 }
 
 .btn-quiz-outline {
@@ -1358,7 +1503,7 @@ table tbody tr:hover {
     }
 
     .conference-item .year {
-        background-color: var(--primary-color);
+        background-color: var(--wise-gray);
         color: var(--text-light);
         padding: 0.5rem;
         border-radius: 4px;
@@ -1368,6 +1513,15 @@ table tbody tr:hover {
     .chapter-card {
         border-left: none;
         border-top: 5px solid var(--primary-color);
+    }
+
+    .founder-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-photo {
+        width: 160px;
     }
 }
 

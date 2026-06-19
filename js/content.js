@@ -121,11 +121,17 @@
         const quoteEl = document.getElementById('founder-quote');
         if (quoteEl && site.founderQuote) {
             const paragraphs = site.founderQuote.text.split('\n\n').map((p) => `<p>${escapeHtml(p)}</p>`).join('');
+            const photo = site.founderQuote.image
+                ? `<img src="${assetPath(site.founderQuote.image)}" alt="${escapeHtml(site.founderQuote.author)}" class="founder-photo" width="200" height="240">`
+                : '';
             quoteEl.innerHTML = `
-                <blockquote class="founder-quote">
-                    ${paragraphs}
-                    <footer>— ${escapeHtml(site.founderQuote.author)}</footer>
-                </blockquote>`;
+                <div class="founder-profile">
+                    ${photo}
+                    <blockquote class="founder-quote">
+                        ${paragraphs}
+                        <footer>— ${escapeHtml(site.founderQuote.author)}</footer>
+                    </blockquote>
+                </div>`;
         }
 
         document.querySelectorAll('[data-site="subscribe-url"]').forEach((el) => {
@@ -154,55 +160,100 @@
             .join('');
     }
 
+    function renderBoardTable(members) {
+        const rows = members
+            .map(
+                (m) => `
+            <tr>
+                <td>${escapeHtml(m.name)}</td>
+                <td>${escapeHtml(m.university || '')}</td>
+            </tr>`
+            )
+            .join('');
+        return `
+            <table class="past-board-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>University</th>
+                    </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+            </table>`;
+    }
+
     async function renderAdvisoryBoard() {
-        const currentGrid = document.getElementById('board-grid');
-        if (currentGrid) {
-            const members = await loadCSV('advisory-board-current.csv');
-            currentGrid.innerHTML = members
-                .map(
-                    (m) => `
-                <div class="board-member">
-                    <div class="member-info">
-                        <h3>${escapeHtml(m.name)}</h3>
-                        <p class="title">${escapeHtml(m.title)}</p>
-                        <p class="company">${escapeHtml(m.company)}</p>
-                        <p class="bio">${escapeHtml(m.bio)}</p>
-                    </div>
-                </div>`
-                )
-                .join('');
-        }
-
+        const currentTable = document.getElementById('current-board-table');
         const pastContainer = document.getElementById('past-board-container');
-        if (!pastContainer) return;
 
-        const past = await loadCSV('past-advisory-board.csv');
-        const byYear = {};
-        past.forEach((row) => {
-            if (!row.year || !row.name) return;
-            if (!byYear[row.year]) byYear[row.year] = [];
-            byYear[row.year].push(row);
-        });
+        try {
+            const mapData = await loadJSON('advisory-map.json');
+            const currentYear = '2026';
+            const currentMembers = mapData.markersByYear[currentYear] || [];
 
-        const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
-        pastContainer.innerHTML = years
-            .map((year) => {
-                const cards = byYear[year]
-                    .map(
-                        (m) => `
-                    <div class="board-photo-card">
-                        <img src="${assetPath(m.photo)}" alt="${escapeHtml(m.name)}" class="board-photo" loading="lazy">
-                        <p class="photo-name">${escapeHtml(m.name)}</p>
-                    </div>`
-                    )
-                    .join('');
-                return `
+            if (currentTable) {
+                currentTable.innerHTML = renderBoardTable(currentMembers);
+            }
+
+            if (!pastContainer) return;
+
+            const years = [...(mapData.years || [])]
+                .filter((year) => year !== currentYear)
+                .sort((a, b) => Number(b) - Number(a));
+
+            pastContainer.innerHTML = years
+                .map((year) => {
+                    const members = mapData.markersByYear[year] || [];
+                    return `
                 <div class="past-board-period" data-year="${escapeHtml(year)}">
                     <h3>${escapeHtml(year)}</h3>
-                    <div class="photo-gallery">${cards}</div>
+                    ${renderBoardTable(members)}
                 </div>`;
-            })
-            .join('');
+                })
+                .join('');
+        } catch {
+            if (currentTable) {
+                const members = await loadCSV('advisory-board-current.csv');
+                const rows = members
+                    .map((m) => `<tr><td>${escapeHtml(m.name)}</td><td>${escapeHtml(m.company || '')}</td></tr>`)
+                    .join('');
+                currentTable.innerHTML = `
+                    <table class="past-board-table">
+                        <thead><tr><th>Name</th><th>University</th></tr></thead>
+                        <tbody>${rows}</tbody>
+                    </table>`;
+            }
+
+            if (!pastContainer) return;
+
+            const past = await loadCSV('past-advisory-board.csv');
+            const byYear = {};
+            past.forEach((row) => {
+                if (!row.year || !row.name) return;
+                if (!byYear[row.year]) byYear[row.year] = [];
+                byYear[row.year].push(row);
+            });
+
+            const years = Object.keys(byYear)
+                .filter((year) => year !== '2026')
+                .sort((a, b) => Number(b) - Number(a));
+
+            pastContainer.innerHTML = years
+                .map((year) => {
+                    const rows = byYear[year]
+                        .map((m) => `<tr><td>${escapeHtml(m.name)}</td><td></td></tr>`)
+                        .join('');
+                    return `
+                <div class="past-board-period" data-year="${escapeHtml(year)}">
+                    <h3>${escapeHtml(year)}</h3>
+                    <table class="past-board-table">
+                        <thead><tr><th>Name</th><th>University</th></tr></thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>`;
+                })
+                .join('');
+        }
     }
 
     async function renderChapters() {

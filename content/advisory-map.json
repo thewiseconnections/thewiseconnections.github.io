@@ -1,0 +1,1259 @@
+{
+  "years": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "countsByYear": {
+    "2021": 8,
+    "2022": 11,
+    "2023": 13,
+    "2024": 13,
+    "2025": 13,
+    "2026": 10
+  },
+  "allMarkers": [
+    {
+      "name": "Kenlaysia Brown",
+      "university": "Georgia Southern University",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 32.4214381,
+      "longitude": -81.7845053
+    },
+    {
+      "name": "Courtney Palkowski",
+      "university": "Michigan State University",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 42.7023794,
+      "longitude": -84.4803869
+    },
+    {
+      "name": "Megan Formwalt",
+      "university": "University of Arkansas",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Annika Richards",
+      "university": "Ohio State University",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 40.0056982,
+      "longitude": -83.0286573
+    },
+    {
+      "name": "Samantha Keiser",
+      "university": "University of Arkansas",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Tanvi Sunkireddy",
+      "university": "University of Arkansas",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Allison Meisinger",
+      "university": "University of Arkansas",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Reagan White",
+      "university": "University of Arkansas",
+      "year": "2021",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Abby Garretson",
+      "university": "University of Arkansas",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Abby Rogers",
+      "university": "University of Arkansas",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Alexandra Krska",
+      "university": "University of Arkansas",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Anita Shanker",
+      "university": "Northeastern University",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 42.3351065,
+      "longitude": -71.0892575
+    },
+    {
+      "name": "Julia Kamin",
+      "university": "Iowa State University",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 42.0279608,
+      "longitude": -93.6447375
+    },
+    {
+      "name": "Kailani Moore",
+      "university": "Colorado State University",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 40.5706567,
+      "longitude": -105.0853995
+    },
+    {
+      "name": "Lauren Boufford",
+      "university": "Michigan State University",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 42.7023794,
+      "longitude": -84.4803869
+    },
+    {
+      "name": "Megan Bagrosky",
+      "university": "University of Oklahoma",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 35.1959878,
+      "longitude": -97.4457083
+    },
+    {
+      "name": "Peyton Tolliver",
+      "university": "University of Central Arkansas",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 35.077641,
+      "longitude": -92.4579926
+    },
+    {
+      "name": "Renee Graham",
+      "university": "Mississippi State University",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 33.4386876,
+      "longitude": -88.7943232
+    },
+    {
+      "name": "Tiziana Ortega",
+      "university": "The Citadel",
+      "year": "2022",
+      "city": "",
+      "state": "",
+      "latitude": 32.7963982,
+      "longitude": -79.9611833
+    },
+    {
+      "name": "Abby Garretson",
+      "university": "University of Arkansas",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Addie Miles",
+      "university": "Mississippi State University",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 33.4386876,
+      "longitude": -88.7943232
+    },
+    {
+      "name": "Amy Hernandez",
+      "university": "Georgia Southern University",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 32.4214381,
+      "longitude": -81.7845053
+    },
+    {
+      "name": "Breanna Schneider",
+      "university": "University of Wisconsin - Madison",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 43.0802745,
+      "longitude": -89.4309587
+    },
+    {
+      "name": "Caitlin Curmode",
+      "university": "The Citadel",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 32.7963982,
+      "longitude": -79.9611833
+    },
+    {
+      "name": "Claire Hudson",
+      "university": "University of Oklahoma",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 35.1959878,
+      "longitude": -97.4457083
+    },
+    {
+      "name": "Katherine Thomas",
+      "university": "University of Arkansas",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Lauren Casey",
+      "university": "Colorado State University",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 40.5706567,
+      "longitude": -105.0853995
+    },
+    {
+      "name": "Maddie Dorish",
+      "university": "Lehigh University",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 40.6068028,
+      "longitude": -75.3782488
+    },
+    {
+      "name": "Madison Farrens",
+      "university": "University of South Florida",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 28.0599999,
+      "longitude": -82.4138362
+    },
+    {
+      "name": "Olivia Kropp",
+      "university": "Iowa State University",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 42.0279608,
+      "longitude": -93.6447375
+    },
+    {
+      "name": "Sally Wysong",
+      "university": "Ohio State University",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 40.0056982,
+      "longitude": -83.0286573
+    },
+    {
+      "name": "Tiziana Ortega",
+      "university": "The Citadel",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 32.7963982,
+      "longitude": -79.9611833
+    },
+    {
+      "name": "Addison Kiteley",
+      "university": "Michigan State University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 42.7023794,
+      "longitude": -84.4803869
+    },
+    {
+      "name": "Alua Bekbossynova",
+      "university": "Lehigh University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 40.6068028,
+      "longitude": -75.3782488
+    },
+    {
+      "name": "Clare Tjaden",
+      "university": "Iowa State University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 42.0279608,
+      "longitude": -93.6447375
+    },
+    {
+      "name": "Ellen Joyce",
+      "university": "Howard University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 38.9218972,
+      "longitude": -77.0195931
+    },
+    {
+      "name": "Gabrielle Martis",
+      "university": "Virginia Commonwealth University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 37.5461246,
+      "longitude": -77.4540609
+    },
+    {
+      "name": "Katherine Thomas",
+      "university": "University of Arkansas",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Madison Simpson",
+      "university": "University of Arkansas",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Natalie Tews",
+      "university": "Baylor University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 31.5504341,
+      "longitude": -97.1102906
+    },
+    {
+      "name": "Randilyn Gomme",
+      "university": "University of Oklahoma",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 35.1959878,
+      "longitude": -97.4457083
+    },
+    {
+      "name": "Shaylee Graves",
+      "university": "Georgia Southern University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 32.4214381,
+      "longitude": -81.7845053
+    },
+    {
+      "name": "Shelby Gabrielson",
+      "university": "Colorado State University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 40.5706567,
+      "longitude": -105.0853995
+    },
+    {
+      "name": "Skylar Rotter",
+      "university": "University of Wisconsin - Madison",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 43.0802745,
+      "longitude": -89.4309587
+    },
+    {
+      "name": "Sophie Perrigin",
+      "university": "Mississippi State University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 33.4386876,
+      "longitude": -88.7943232
+    },
+    {
+      "name": "Aleeza Rana",
+      "university": "Michigan State University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 42.7023794,
+      "longitude": -84.4803869
+    },
+    {
+      "name": "Carly Daniel",
+      "university": "Georgia Southern University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 32.4214381,
+      "longitude": -81.7845053
+    },
+    {
+      "name": "Connie Chen",
+      "university": "Iowa State University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 42.0279608,
+      "longitude": -93.6447375
+    },
+    {
+      "name": "Faith Jung",
+      "university": "University of Kansas",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 38.9535052,
+      "longitude": -95.263093
+    },
+    {
+      "name": "Julia Steele",
+      "university": "Colorado State University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 40.5706567,
+      "longitude": -105.0853995
+    },
+    {
+      "name": "Karina Osma Perez",
+      "university": "Georgia Tech University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 33.7760948,
+      "longitude": -84.3988077
+    },
+    {
+      "name": "Katherine Vincent",
+      "university": "Brigham Young University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 40.2554196,
+      "longitude": -111.6496806
+    },
+    {
+      "name": "Kyla Richardson",
+      "university": "Howard University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 38.9218972,
+      "longitude": -77.0195931
+    },
+    {
+      "name": "McKinley Lowden",
+      "university": "Auburn University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 32.5919529,
+      "longitude": -85.4959775
+    },
+    {
+      "name": "Nicole Sherman",
+      "university": "Western Michigan University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 42.2832928,
+      "longitude": -85.6102812
+    },
+    {
+      "name": "Remington Reaves",
+      "university": "University of Arkansas",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Taylor Adams",
+      "university": "Lehigh University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 40.6068028,
+      "longitude": -75.3782488
+    },
+    {
+      "name": "Sophie Perrigin",
+      "university": "Mississippi State University",
+      "year": "2025",
+      "city": "",
+      "state": "",
+      "latitude": 33.4386876,
+      "longitude": -88.7943232
+    },
+    {
+      "name": "Hannah Yong",
+      "university": "University of Arkansas",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    },
+    {
+      "name": "Nora Rolison",
+      "university": "Michigan State University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 42.7023794,
+      "longitude": -84.4803869
+    },
+    {
+      "name": "Samata Luintel",
+      "university": "Mississippi State University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 33.4386876,
+      "longitude": -88.7943232
+    },
+    {
+      "name": "Allie Gonzalez",
+      "university": "Western Michigan University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 42.2832928,
+      "longitude": -85.6102812
+    },
+    {
+      "name": "Erin Bath",
+      "university": "Colorado State University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 40.5706567,
+      "longitude": -105.0853995
+    },
+    {
+      "name": "Grace Hampton",
+      "university": "University of Oklahoma",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 35.1959878,
+      "longitude": -97.4457083
+    },
+    {
+      "name": "Morgan Haight",
+      "university": "Brigham Young University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 40.2554196,
+      "longitude": -111.6496806
+    },
+    {
+      "name": "Libby Brewer",
+      "university": "North Carolina State University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 35.7718497,
+      "longitude": -78.674087
+    },
+    {
+      "name": "Rupashi Gupta",
+      "university": "Indiana University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 39.1802358,
+      "longitude": -86.5093526
+    },
+    {
+      "name": "Remington Reaves",
+      "university": "University of Arkansas",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 36.0970389,
+      "longitude": -94.1703322
+    }
+  ],
+  "markersByYear": {
+    "2021": [
+      {
+        "name": "Kenlaysia Brown",
+        "university": "Georgia Southern University",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 32.4214381,
+        "longitude": -81.7845053
+      },
+      {
+        "name": "Courtney Palkowski",
+        "university": "Michigan State University",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 42.7023794,
+        "longitude": -84.4803869
+      },
+      {
+        "name": "Megan Formwalt",
+        "university": "University of Arkansas",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Annika Richards",
+        "university": "Ohio State University",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 40.0056982,
+        "longitude": -83.0286573
+      },
+      {
+        "name": "Samantha Keiser",
+        "university": "University of Arkansas",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Tanvi Sunkireddy",
+        "university": "University of Arkansas",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Allison Meisinger",
+        "university": "University of Arkansas",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Reagan White",
+        "university": "University of Arkansas",
+        "year": "2021",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      }
+    ],
+    "2022": [
+      {
+        "name": "Abby Garretson",
+        "university": "University of Arkansas",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Abby Rogers",
+        "university": "University of Arkansas",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Alexandra Krska",
+        "university": "University of Arkansas",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Anita Shanker",
+        "university": "Northeastern University",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 42.3351065,
+        "longitude": -71.0892575
+      },
+      {
+        "name": "Julia Kamin",
+        "university": "Iowa State University",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 42.0279608,
+        "longitude": -93.6447375
+      },
+      {
+        "name": "Kailani Moore",
+        "university": "Colorado State University",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 40.5706567,
+        "longitude": -105.0853995
+      },
+      {
+        "name": "Lauren Boufford",
+        "university": "Michigan State University",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 42.7023794,
+        "longitude": -84.4803869
+      },
+      {
+        "name": "Megan Bagrosky",
+        "university": "University of Oklahoma",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 35.1959878,
+        "longitude": -97.4457083
+      },
+      {
+        "name": "Peyton Tolliver",
+        "university": "University of Central Arkansas",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 35.077641,
+        "longitude": -92.4579926
+      },
+      {
+        "name": "Renee Graham",
+        "university": "Mississippi State University",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 33.4386876,
+        "longitude": -88.7943232
+      },
+      {
+        "name": "Tiziana Ortega",
+        "university": "The Citadel",
+        "year": "2022",
+        "city": "",
+        "state": "",
+        "latitude": 32.7963982,
+        "longitude": -79.9611833
+      }
+    ],
+    "2023": [
+      {
+        "name": "Abby Garretson",
+        "university": "University of Arkansas",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Addie Miles",
+        "university": "Mississippi State University",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 33.4386876,
+        "longitude": -88.7943232
+      },
+      {
+        "name": "Amy Hernandez",
+        "university": "Georgia Southern University",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 32.4214381,
+        "longitude": -81.7845053
+      },
+      {
+        "name": "Breanna Schneider",
+        "university": "University of Wisconsin - Madison",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 43.0802745,
+        "longitude": -89.4309587
+      },
+      {
+        "name": "Caitlin Curmode",
+        "university": "The Citadel",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 32.7963982,
+        "longitude": -79.9611833
+      },
+      {
+        "name": "Claire Hudson",
+        "university": "University of Oklahoma",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 35.1959878,
+        "longitude": -97.4457083
+      },
+      {
+        "name": "Katherine Thomas",
+        "university": "University of Arkansas",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Lauren Casey",
+        "university": "Colorado State University",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 40.5706567,
+        "longitude": -105.0853995
+      },
+      {
+        "name": "Maddie Dorish",
+        "university": "Lehigh University",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 40.6068028,
+        "longitude": -75.3782488
+      },
+      {
+        "name": "Madison Farrens",
+        "university": "University of South Florida",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 28.0599999,
+        "longitude": -82.4138362
+      },
+      {
+        "name": "Olivia Kropp",
+        "university": "Iowa State University",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 42.0279608,
+        "longitude": -93.6447375
+      },
+      {
+        "name": "Sally Wysong",
+        "university": "Ohio State University",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 40.0056982,
+        "longitude": -83.0286573
+      },
+      {
+        "name": "Tiziana Ortega",
+        "university": "The Citadel",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 32.7963982,
+        "longitude": -79.9611833
+      }
+    ],
+    "2024": [
+      {
+        "name": "Addison Kiteley",
+        "university": "Michigan State University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 42.7023794,
+        "longitude": -84.4803869
+      },
+      {
+        "name": "Alua Bekbossynova",
+        "university": "Lehigh University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 40.6068028,
+        "longitude": -75.3782488
+      },
+      {
+        "name": "Clare Tjaden",
+        "university": "Iowa State University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 42.0279608,
+        "longitude": -93.6447375
+      },
+      {
+        "name": "Ellen Joyce",
+        "university": "Howard University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 38.9218972,
+        "longitude": -77.0195931
+      },
+      {
+        "name": "Gabrielle Martis",
+        "university": "Virginia Commonwealth University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 37.5461246,
+        "longitude": -77.4540609
+      },
+      {
+        "name": "Katherine Thomas",
+        "university": "University of Arkansas",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Madison Simpson",
+        "university": "University of Arkansas",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Natalie Tews",
+        "university": "Baylor University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 31.5504341,
+        "longitude": -97.1102906
+      },
+      {
+        "name": "Randilyn Gomme",
+        "university": "University of Oklahoma",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 35.1959878,
+        "longitude": -97.4457083
+      },
+      {
+        "name": "Shaylee Graves",
+        "university": "Georgia Southern University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 32.4214381,
+        "longitude": -81.7845053
+      },
+      {
+        "name": "Shelby Gabrielson",
+        "university": "Colorado State University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 40.5706567,
+        "longitude": -105.0853995
+      },
+      {
+        "name": "Skylar Rotter",
+        "university": "University of Wisconsin - Madison",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 43.0802745,
+        "longitude": -89.4309587
+      },
+      {
+        "name": "Sophie Perrigin",
+        "university": "Mississippi State University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 33.4386876,
+        "longitude": -88.7943232
+      }
+    ],
+    "2025": [
+      {
+        "name": "Aleeza Rana",
+        "university": "Michigan State University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 42.7023794,
+        "longitude": -84.4803869
+      },
+      {
+        "name": "Carly Daniel",
+        "university": "Georgia Southern University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 32.4214381,
+        "longitude": -81.7845053
+      },
+      {
+        "name": "Connie Chen",
+        "university": "Iowa State University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 42.0279608,
+        "longitude": -93.6447375
+      },
+      {
+        "name": "Faith Jung",
+        "university": "University of Kansas",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 38.9535052,
+        "longitude": -95.263093
+      },
+      {
+        "name": "Julia Steele",
+        "university": "Colorado State University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 40.5706567,
+        "longitude": -105.0853995
+      },
+      {
+        "name": "Karina Osma Perez",
+        "university": "Georgia Tech University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 33.7760948,
+        "longitude": -84.3988077
+      },
+      {
+        "name": "Katherine Vincent",
+        "university": "Brigham Young University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 40.2554196,
+        "longitude": -111.6496806
+      },
+      {
+        "name": "Kyla Richardson",
+        "university": "Howard University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 38.9218972,
+        "longitude": -77.0195931
+      },
+      {
+        "name": "McKinley Lowden",
+        "university": "Auburn University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 32.5919529,
+        "longitude": -85.4959775
+      },
+      {
+        "name": "Nicole Sherman",
+        "university": "Western Michigan University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 42.2832928,
+        "longitude": -85.6102812
+      },
+      {
+        "name": "Remington Reaves",
+        "university": "University of Arkansas",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Taylor Adams",
+        "university": "Lehigh University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 40.6068028,
+        "longitude": -75.3782488
+      },
+      {
+        "name": "Sophie Perrigin",
+        "university": "Mississippi State University",
+        "year": "2025",
+        "city": "",
+        "state": "",
+        "latitude": 33.4386876,
+        "longitude": -88.7943232
+      }
+    ],
+    "2026": [
+      {
+        "name": "Hannah Yong",
+        "university": "University of Arkansas",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      },
+      {
+        "name": "Nora Rolison",
+        "university": "Michigan State University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 42.7023794,
+        "longitude": -84.4803869
+      },
+      {
+        "name": "Samata Luintel",
+        "university": "Mississippi State University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 33.4386876,
+        "longitude": -88.7943232
+      },
+      {
+        "name": "Allie Gonzalez",
+        "university": "Western Michigan University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 42.2832928,
+        "longitude": -85.6102812
+      },
+      {
+        "name": "Erin Bath",
+        "university": "Colorado State University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 40.5706567,
+        "longitude": -105.0853995
+      },
+      {
+        "name": "Grace Hampton",
+        "university": "University of Oklahoma",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 35.1959878,
+        "longitude": -97.4457083
+      },
+      {
+        "name": "Morgan Haight",
+        "university": "Brigham Young University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 40.2554196,
+        "longitude": -111.6496806
+      },
+      {
+        "name": "Libby Brewer",
+        "university": "North Carolina State University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 35.7718497,
+        "longitude": -78.674087
+      },
+      {
+        "name": "Rupashi Gupta",
+        "university": "Indiana University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 39.1802358,
+        "longitude": -86.5093526
+      },
+      {
+        "name": "Remington Reaves",
+        "university": "University of Arkansas",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 36.0970389,
+        "longitude": -94.1703322
+      }
+    ]
+  },
+  "generatedAt": "2026-06-16 10:32:27"
+}

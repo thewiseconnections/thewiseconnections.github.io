@@ -21,7 +21,9 @@ WISE Website/
 │   ├── newsletters.html
 │   └── contact.html
 ├── Resources/           # Excel masters, PDFs, photos
-└── scripts/sync-from-excel.py
+└── scripts/
+    ├── sync-from-excel.py
+    └── build-advisory-map.py
 ```
 
 ## 🎯 Features
@@ -31,7 +33,7 @@ WISE Website/
 - **About** - Our story, mission, values, founder message
 - **Chapters** - Universities with WISE chapters
 - **Conferences** - Symposium details and photo gallery
-- **Advisory Board** - Current and past board members
+- **Advisory Board** - Current and past board members with interactive U.S. map
 - **Newsletters** - WISE Connections archive
 - **Career Explorer** - Interactive quiz for supply chain career paths
 - **Contact** - Contact form and social links

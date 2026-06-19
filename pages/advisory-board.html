@@ -6,6 +6,12 @@
     <title>Advisory Board - WISE</title>
     <link rel="icon" href="../images/WISE_student_logo-color.jpg" type="image/jpeg">
     <link rel="stylesheet" href="../css/styles.css">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    >
 </head>
 <body data-page="advisory-board">
     <nav class="navbar">
@@ -28,15 +34,31 @@
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container map-page">
         <section class="about">
             <h2>Advisory Board</h2>
             <p>Students from different universities connect and collaborate to guide WISE's growth nationwide.</p>
         </section>
 
         <section class="advisory-section">
+            <h2>Advisory Board Map</h2>
+            <p>Explore where advisory board members are located across the United States. Filter by year to see how representation has grown.</p>
+            <div class="map-controls-card">
+                <label for="map-year-filter">Filter by Board Year</label>
+                <select id="map-year-filter">
+                    <option value="all">All Years</option>
+                </select>
+                <p id="map-summary" class="map-summary">Loading map data…</p>
+            </div>
+            <div class="map-card">
+                <div id="advisory-map" aria-label="Map of advisory board universities"></div>
+            </div>
+        </section>
+
+        <section class="advisory-section">
             <h2>Current Advisory Board (2026)</h2>
-            <div class="board-grid" id="board-grid"></div>
+            <img src="../images/2026-board.jpg" alt="2026 WISE Advisory Board" class="board-group-photo">
+            <div id="current-board-table"></div>
         </section>
 
         <section class="advisory-section">
@@ -52,7 +74,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="../js/script.js"></script>
     <script src="../js/content.js"></script>
+    <script src="../js/advisory-map.js"></script>
 </body>
 </html>

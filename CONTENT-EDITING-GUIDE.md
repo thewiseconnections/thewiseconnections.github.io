@@ -29,8 +29,9 @@ This guide is for team members who update the website **without editing HTML cod
 | Conference dates, theme, location                  | `Resources/Conferences.xlsx` → run sync                    |
 | Conference photos on home & conferences page       | `content/conference-gallery.csv`                           |
 | Program PDF links for conferences                  | `content/conferences.csv` column `program_pdf`             |
-| Past board member photos                           | Add image to `Resources/Photo keeping/AdvisoryBoard_YYYY/` |
-| Career Explorer quiz                               | `content/career-quiz.json`                                   |
+| Past board member photos                           | Not used on website (past members shown as name/university list) |
+| Career Explorer quiz                               | `content/career-quiz.json`                                  |
+| Advisory Board map markers + year filter           | `List of Advisory Board Members 2021-2026.xlsx` + map build script (shown on Advisory Board page) |
 
 
 ---
@@ -140,6 +141,27 @@ Students answer 6 questions and see a suggested supply chain career path.
 To add a question, copy an existing question block and change the text and scores. Career IDs in `scores` must match keys under `careers`.
 
 Preview at: http://localhost:8000/pages/career-explorer.html
+
+---
+
+## Advisory Board map automation
+
+The website map on the Advisory Board page (`pages/advisory-board.html`) is generated from the workbook:
+
+- `List of Advisory Board Members 2021-2026.xlsx` (source rows)
+- `content/university-locations.csv` (cached geocoding lookup)
+- `content/advisory-map.json` (final map data used by website)
+
+After updating the workbook, run:
+
+```bash
+python3 scripts/build-advisory-map.py
+```
+
+Notes:
+- First run is slower (geocodes universities).
+- Future runs are faster because locations are cached in `content/university-locations.csv`.
+- If a university geocode is wrong, edit `content/university-locations.csv` manually (lat/lon), then rerun the script.
 
 ---
 
