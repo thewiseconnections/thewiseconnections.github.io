@@ -140,6 +140,50 @@
         document.querySelectorAll('[data-site="archive-url"]').forEach((el) => {
             el.href = site.newsletterArchiveUrl;
         });
+
+        if (site.home) {
+            const home = site.home;
+
+            document.querySelectorAll('[data-site="home-why-title"]').forEach((el) => {
+                el.textContent = home.whyGetInvolvedTitle || 'Why Get Involved';
+            });
+            document.querySelectorAll('[data-site="home-offers-title"]').forEach((el) => {
+                el.textContent = home.offersTitle || 'What WISE Offers';
+            });
+            document.querySelectorAll('[data-site="home-conferences-title"]').forEach((el) => {
+                el.textContent = home.conferencesTitle || 'WISE Conferences';
+            });
+            document.querySelectorAll('[data-site="home-conferences-intro"]').forEach((el) => {
+                el.textContent = home.conferencesIntro || '';
+            });
+
+            const whyCta = document.getElementById('home-why-cta');
+            if (whyCta && home.whyGetInvolvedCta) {
+                whyCta.innerHTML = `<a href="${assetPath(home.whyGetInvolvedCta.href)}" class="btn btn-secondary">${escapeHtml(home.whyGetInvolvedCta.label)}</a>`;
+            }
+
+            const offersGrid = document.getElementById('home-offers-grid');
+            if (offersGrid && home.offers) {
+                offersGrid.innerHTML = home.offers
+                    .map((offer) => {
+                        const button = offer.button
+                            ? `<p class="section-link"><a href="${assetPath(offer.button.href)}" class="btn ${escapeHtml(offer.button.class || 'btn-primary')}">${escapeHtml(offer.button.label)}</a></p>`
+                            : '';
+                        return `
+                <div class="card">
+                    <h3>${escapeHtml(offer.title)}</h3>
+                    <p>${escapeHtml(offer.description)}</p>
+                    ${button}
+                </div>`;
+                    })
+                    .join('');
+            }
+
+            const conferencesCta = document.getElementById('home-conferences-cta');
+            if (conferencesCta && home.conferencesCta) {
+                conferencesCta.innerHTML = `<a href="${assetPath(home.conferencesCta.href)}" class="btn btn-primary">${escapeHtml(home.conferencesCta.label)}</a>`;
+            }
+        }
     }
 
     async function renderNewsletters() {

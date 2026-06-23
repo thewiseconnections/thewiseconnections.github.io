@@ -41,5 +41,42 @@
     "image": "images/stephanie-thomas.jpg"
   },
   "newsletterSubscribeUrl": "http://eepurl.com/iID8lg",
-  "newsletterArchiveUrl": "https://us22.campaign-archive.com/home/?u=f3e434628540527b4533da049&id=a6ece3f282"
+  "newsletterArchiveUrl": "https://us22.campaign-archive.com/home/?u=f3e434628540527b4533da049&id=a6ece3f282",
+  "home": {
+    "whyGetInvolvedTitle": "Why Get Involved",
+    "whyGetInvolvedCta": {
+      "label": "Read Our Story & Mission",
+      "href": "pages/about.html"
+    },
+    "offersTitle": "What WISE Offers",
+    "offers": [
+      {
+        "title": "Campus Chapters",
+        "description": "Connect with students at universities across the country through local WISE chapters."
+      },
+      {
+        "title": "Future Leaders Symposium",
+        "description": "Join our signature annual conference for networking, professional development, and industry insights."
+      },
+      {
+        "title": "National Network",
+        "description": "Build relationships with peers, faculty, and industry professionals committed to supply chain excellence."
+      },
+      {
+        "title": "Career Explorer",
+        "description": "Take a short quiz to discover which supply chain career path might fit your interests—from logistics to analytics.",
+        "button": {
+          "label": "Try the quiz",
+          "href": "pages/career-explorer.html",
+          "class": "btn-primary"
+        }
+      }
+    ],
+    "conferencesTitle": "WISE Conferences",
+    "conferencesIntro": "Join us for the annual WISE Future Leaders Symposium featuring networking, professional development, and industry engagement.",
+    "conferencesCta": {
+      "label": "View Conference Details",
+      "href": "pages/conferences.html"
+    }
+  }
 }

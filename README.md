@@ -1,151 +1,102 @@
-# WISE - Women Impacting Supply Chain Excellence Website
+# WISE — Women Impacting Supply Chain Excellence Website
 
-A modern, responsive website for the Women Impacting Supply Chain Excellence club organization. The site showcases club chapters, past conferences, and provides networking opportunities for women supply chain professionals.
+A static website for the WISE club. Page layout lives in HTML/CSS/JS; most text and lists live in `content/` so non-developers can update the site without touching code.
 
-## 📁 Project Structure
+## Project structure
 
 ```
 WISE Website/
-├── content/             # Editable data (CSV + site.json) — see CONTENT-EDITING-GUIDE.md
-├── index.html           # Home page
+├── content/              # Editable data (CSV + JSON)
+├── index.html            # Home page
+├── pages/                # All other pages (edit only if you know HTML)
 ├── css/styles.css
 ├── js/
-│   ├── script.js        # Navigation
-│   ├── content.js       # Loads content/ into pages
-│   └── contact.js
-├── pages/
-│   ├── about.html       # Our story, mission, values, founder quote
-│   ├── chapters.html
-│   ├── conferences.html
-│   ├── advisory-board.html
-│   ├── newsletters.html
-│   └── contact.html
-├── Resources/           # Excel masters, PDFs, photos
+│   ├── script.js         # Navigation
+│   ├── content.js        # Loads content/ into pages
+│   ├── contact.js
+│   ├── career-quiz.js
+│   └── advisory-map.js
+├── Resources/            # Excel masters, PDFs, photos
+├── images/
 └── scripts/
     ├── sync-from-excel.py
-    └── build-advisory-map.py
+    ├── build-advisory-map.py
+    └── validate-content.py
 ```
 
-## 🎯 Features
+## Pages
 
-### Pages
-- **Home** - Why get involved, highlights, conference photos
-- **About** - Our story, mission, values, founder message
-- **Chapters** - Universities with WISE chapters
-- **Conferences** - Symposium details and photo gallery
-- **Advisory Board** - Current and past board members with interactive U.S. map
-- **Newsletters** - WISE Connections archive
-- **Career Explorer** - Interactive quiz for supply chain career paths
-- **Contact** - Contact form and social links
+- **Home** — Highlights, conference photos, links to key sections
+- **About** — Story, mission, values, founder message
+- **Chapters** — Universities with WISE chapters
+- **Conferences** — Symposium details and photo gallery
+- **Advisory Board** — Current and past members with interactive map
+- **Newsletters** — WISE Connections archive
+- **Career Explorer** — Supply chain career quiz
+- **Contact** — Contact form and social links
 
-### Editing content (for non-developers)
-See **[CONTENT-EDITING-GUIDE.md](CONTENT-EDITING-GUIDE.md)**. Most lists come from CSV/Excel in `content/` and `Resources/` — no HTML editing required.
+## Editing content
 
-### Design Features
-- 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
-- 🎨 **Modern Styling** - Professional color scheme and clean typography
-- 🧭 **Navigation** - Sticky header with mobile-friendly menu
-- ♿ **Accessible** - Semantic HTML and accessible form elements
+**Start here:** [CONTENT-EDITING-GUIDE.md](CONTENT-EDITING-GUIDE.md)
 
-## 🎨 Color Scheme
+**Contributing workflow:** [CONTRIBUTING.md](CONTRIBUTING.md)
 
-- **Primary Color**: #8B3A62 (Purple/Burgundy) - Used for headings and primary elements
-- **Secondary Color**: #2C3E50 (Dark Blue) - Used for footer and secondary sections
-- **Accent Color**: #E74C3C (Red) - Used for CTAs and highlights
-- **Light Background**: #F8F9FA (Light Gray) - Used for card backgrounds
+Most updates go in `content/` (CSV/JSON) or `Resources/` (Excel, photos). Do not edit HTML unless you are maintaining the site design.
 
-## 🚀 Getting Started
+### Two lanes
 
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- A text editor or IDE for modifications
+| Lane | Who | What to edit |
+|------|-----|--------------|
+| **Content** | Board members, newsletter editors, chapter leads | `content/`, `Resources/` |
+| **Code/design** | Web maintainers (1–2 people) | `pages/`, `css/`, `js/`, `scripts/` |
 
-### Running the Website
+## Local preview
 
-1. Open `index.html` in your web browser, or
-2. Use a local development server:
-   ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # Using Python 2
-   python -m SimpleHTTPServer 8000
-   
-   # Using Node.js with http-server
-   npx http-server
-   ```
+Lists and dynamic content require a local server. Do not open `index.html` by double-clicking.
 
-3. Navigate to `http://localhost:8000` in your browser
-
-## 📝 Content Sections
-
-### Chapters
-The website includes 6 regional chapters:
-- Northeast Chapter (New York, NY)
-- Midwest Chapter (Chicago, IL)
-- Texas Chapter (Houston, TX)
-- West Coast Chapter (Los Angeles, CA)
-- Southeast Chapter (Atlanta, GA)
-- Pacific Northwest Chapter (Seattle, WA)
-
-### Conferences
-- **Upcoming**: WISE Annual Summit 2025 (October 15-17, Denver, CO)
-- **Past Events**: Archive from 2019-2024 with attendance numbers and highlights
-
-## 🔧 Customization
-
-### Adding a New Chapter
-Edit `pages/chapters.html` and add a new chapter card:
-```html
-<div class="chapter-card">
-    <h3>Your Chapter Name</h3>
-    <p><strong>Location:</strong> City, State</p>
-    <p><strong>Founded:</strong> Year</p>
-    <p><strong>Members:</strong> Number+</p>
-    <p>Description of chapter</p>
-    <button class="btn btn-primary">Learn More</button>
-</div>
+```bash
+cd "WISE Website"
+python3 -m http.server 8000
 ```
 
-### Changing Colors
-Edit the CSS variables in `css/styles.css`:
-```css
-:root {
-    --primary-color: #8B3A62;
-    --secondary-color: #2C3E50;
-    --accent-color: #E74C3C;
-    --light-bg: #F8F9FA;
-    --text-dark: #2C3E50;
-    --text-light: #FFFFFF;
-}
+Open [http://localhost:8000](http://localhost:8000) and refresh after changes.
+
+### After editing Excel in `Resources/`
+
+```bash
+python3 scripts/sync-from-excel.py
 ```
 
-### Updating Contact Information
-Edit `pages/contact.html` to update:
-- Email addresses
-- Phone numbers
-- Mailing address
-- Chapter director information in the table
+Install the helper once:
 
-## 📞 Contact
+```bash
+pip install -r scripts/requirements.txt
+```
 
-**General Inquiries**: info@wiseforums.org  
-**Conference Information**: conferences@wiseforums.org  
-**Chapter Inquiries**: chapters@wiseforums.org  
-**Phone**: (555) 123-4567  
-**Address**: 123 Business Park Avenue, New York, NY 10001
+### Validate before opening a pull request
 
-## 📄 License
+```bash
+python3 scripts/validate-content.py
+```
 
-© 2025 Women Impacting Supply Chain Excellence. All rights reserved.
+This checks JSON/CSV files, image paths, and whether Excel-derived CSVs are in sync.
 
-## 🤝 Contributing
+## GitHub workflow
 
-To contribute to the website:
-1. Make your changes locally
-2. Test across different browsers and devices
-3. Submit updates through your organization's process
+1. Create a branch for your changes
+2. Open a pull request (do not push directly to `main`)
+3. CI runs `validate-content.py` automatically
+4. A site maintainer reviews and merges
 
----
+Enable branch protection on `main` in GitHub repo settings so all changes go through pull requests.
 
-For more information about WISE, visit the website or contact the leadership team.
+## Deployment
+
+The site is static HTML. Common hosting options:
+
+- **GitHub Pages** — Deploy from the `main` branch
+- **Netlify / Vercel** — Connect the repo for preview deploys on each PR
+
+## License
+
+© Women Impacting Supply Chain Excellence. All rights reserved.

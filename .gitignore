@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Local Python libraries (not part of the site)
+.pylibs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editor / environment
+.env
+.env.*

@@ -22,6 +22,7 @@ This guide is for team members who update the website **without editing HTML cod
 | What you want to change                            | Where to edit                                              |
 | -------------------------------------------------- | ---------------------------------------------------------- |
 | Tagline, mission, our story, values, founder quote | `content/site.json`                                        |
+| Home page section titles, offer cards, conference intro | `content/site.json` → `home` section                  |
 | Newsletters list                                   | `content/newsletters.csv` (open in Excel)                  |
 | Current advisory board members                     | `content/advisory-board-current.csv`                       |
 | Past advisory board (by year)                      | `Resources/Advisory Board.xlsx` → run sync (below)         |
@@ -177,6 +178,17 @@ To switch taglines, change the `"tagline"` field. Options you provided are liste
 
 To use the **shorter founder quote**, replace the `founderQuote.text` block with the second Stephanie Thomas quote from your copy deck.
 
+### Home page cards and section text (`site.json` → `home`)
+
+The home page “What WISE Offers” cards and conference intro are in `site.json` under `"home"`:
+
+- `offersTitle` — Section heading above the four cards
+- `offers` — List of cards with `title`, `description`, and optional `button` (`label`, `href`, `class`)
+- `conferencesTitle` / `conferencesIntro` — WISE Conferences section on the home page
+- `whyGetInvolvedTitle` / `whyGetInvolvedCta` — “Why Get Involved” heading and button
+
+Copy an existing card block when adding or editing. Keep JSON commas and quotes intact.
+
 ---
 
 ## Folder layout (simplified)
@@ -211,4 +223,6 @@ Contact whoever maintains the website repository. Common requests:
 - Design changes
 - Connecting a contact form to email
 - Publishing the site live (GitHub Pages, Netlify, etc.)
+
+See also **[CONTRIBUTING.md](CONTRIBUTING.md)** for the pull request workflow and validation checklist.
 
