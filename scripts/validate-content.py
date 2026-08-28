@@ -27,7 +27,7 @@ CSV_SCHEMAS: dict[str, list[str]] = {
     "newsletters.csv": ["date", "title", "description", "link"],
     "advisory-board-current.csv": ["name", "title", "company", "bio"],
     "conference-gallery.csv": ["filename", "alt"],
-    "chapters.csv": ["university"],
+    "chapters.csv": ["university", "social_url"],
     "past-advisory-board.csv": ["year", "name", "photo"],
     "conferences.csv": [
         "year",

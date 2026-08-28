@@ -18,10 +18,16 @@ CONTENT = ROOT / "content"
 RESOURCES = ROOT / "Resources"
 
 
-def write_csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
+def write_csv(
+    path: Path,
+    fieldnames: list[str],
+    rows: list[dict],
+    *,
+    lineterminator: str = "\r\n",
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator=lineterminator)
         writer.writeheader()
         writer.writerows(rows)
 
@@ -34,18 +40,52 @@ def sync_chapters() -> None:
 
     import openpyxl
 
-    wb = openpyxl.load_workbook(path, read_only=True)
+    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     rows = []
-    for sheet_name in wb.sheetnames:
-        ws = wb[sheet_name]
+    for ws in wb.worksheets:
+        headers = [str(cell.value or "").strip().lower() for cell in ws[1]]
+        chapter_index = next(
+            (index for index, header in enumerate(headers) if header.startswith("chapter")),
+            0,
+        )
+        social_index = next(
+            (index for index, header in enumerate(headers) if header == "social media"),
+            None,
+        )
+
         for row in ws.iter_rows(min_row=2, values_only=True):
-            if row and row[0]:
-                rows.append({"university": str(row[0]).strip()})
+            if not row or chapter_index >= len(row) or not row[chapter_index]:
+                continue
+
+            university = str(row[chapter_index]).strip()
+            if university.casefold() == "not in website yet":
+                break
+
+            # Keep public labels concise while preserving the workbook as the source.
+            if "(Merged in Supply Chain Club" in university:
+                university = university.split("(", 1)[0].strip()
+            university = university.replace("University of Oklahama", "University of Oklahoma")
+
+            social_url = ""
+            if social_index is not None and social_index < len(row) and row[social_index]:
+                candidate = str(row[social_index]).strip()
+                if candidate.startswith(("https://", "http://")):
+                    social_url = candidate
+
+            rows.append({"university": university, "social_url": social_url})
+
+        if rows:
+            break
 
     if not rows:
         print("Skip chapters: no rows in Chapters.xlsx (existing chapters.csv kept)")
         return
-    write_csv(CONTENT / "chapters.csv", ["university"], rows)
+    write_csv(
+        CONTENT / "chapters.csv",
+        ["university", "social_url"],
+        rows,
+        lineterminator="\n",
+    )
     print(f"Wrote {len(rows)} chapters")
 
 

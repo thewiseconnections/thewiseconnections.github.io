@@ -306,7 +306,24 @@
 
         const chapters = await loadCSV('chapters.csv');
         grid.innerHTML = chapters
-            .map((c) => `<div class="university-tile">${escapeHtml(c.university)}</div>`)
+            .map((c) => {
+                const university = escapeHtml(c.university || '');
+                const socialUrl = (c.social_url || '').trim();
+                if (!/^https?:\/\//i.test(socialUrl)) {
+                    return `<div class="university-tile">${university}</div>`;
+                }
+
+                const platform = /instagram\.com/i.test(socialUrl)
+                    ? 'Instagram'
+                    : /linkedin\.com/i.test(socialUrl)
+                        ? 'LinkedIn'
+                        : 'Social media';
+                return `
+                    <a class="university-tile" href="${escapeHtml(socialUrl)}" target="_blank" rel="noopener" aria-label="View ${university} on ${platform}">
+                        <span>${university}</span>
+                        <span class="university-social">View ${platform} ↗</span>
+                    </a>`;
+            })
             .join('');
     }
 

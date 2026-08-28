@@ -48,7 +48,9 @@ This guide is for team members who update the website **without editing HTML cod
 
 ### Chapters.xlsx
 
-- Add one university name per row under the **Chapter** column
+- Add current chapters above the **Not in website yet** row
+- Put the public university name under **Chapter** and its Instagram or LinkedIn URL under **social media**
+- Rows below **Not in website yet** are not displayed on the website
 
 ### Conferences.xlsx
 
@@ -225,4 +227,3 @@ Contact whoever maintains the website repository. Common requests:
 - Publishing the site live (GitHub Pages, Netlify, etc.)
 
 See also **[CONTRIBUTING.md](CONTRIBUTING.md)** for the pull request workflow and validation checklist.
-
