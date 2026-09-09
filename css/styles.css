@@ -88,7 +88,7 @@ body {
 }
 
 .nav-links a {
-    color: var(--text-dark);
+    color: var(--wise-red);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.94rem;
@@ -97,7 +97,7 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--wise-red);
+    color: var(--primary-hover);
     border-bottom: 2px solid var(--wise-red);
     padding-bottom: 0.5rem;
 }
@@ -121,7 +121,7 @@ body {
         url('../WISE%20Brand%20Guides/9.png');
     background-size: auto, auto, auto, 520px;
     color: var(--text-dark);
-    padding: 100px 20px;
+    padding: 90px 20px 45px;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
@@ -179,7 +179,7 @@ body {
 
 /* Main Content */
 main {
-    padding: 60px 20px;
+    padding: 30px 20px 60px;
 }
 
 .about {
