@@ -47,7 +47,7 @@ body {
         url('../WISE%20Brand%20Guides/9.png');
     background-size: auto, 360px;
     color: var(--text-dark);
-    padding: 0.7rem 0;
+    padding: 0.2rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -75,10 +75,10 @@ body {
 
 .logo-img {
     display: block;
-    width: 138px;
-    height: 90px;
+    width: 195px;
+    height: 140px;
     object-fit: contain;
-    margin: -12px 0 -10px;
+    margin: -17px 0;
 }
 
 .nav-links {
@@ -184,7 +184,7 @@ main {
 
 .about {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 }
 
 .about h2 {
@@ -208,6 +208,7 @@ main {
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.8;
+    margin-bottom: 30px;
 }
 
 /* Featured Section */
