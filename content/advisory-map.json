@@ -10,10 +10,10 @@
   "countsByYear": {
     "2021": 8,
     "2022": 11,
-    "2023": 13,
-    "2024": 13,
+    "2023": 14,
+    "2024": 14,
     "2025": 13,
-    "2026": 10
+    "2026": 11
   },
   "allMarkers": [
     {
@@ -242,6 +242,15 @@
       "longitude": -97.4457083
     },
     {
+      "name": "Elah Spence",
+      "university": "North Carolina A & T State University",
+      "year": "2023",
+      "city": "",
+      "state": "",
+      "latitude": 36.0780523,
+      "longitude": -79.7711093
+    },
+    {
       "name": "Katherine Thomas",
       "university": "University of Arkansas",
       "year": "2023",
@@ -312,6 +321,15 @@
       "state": "",
       "latitude": 42.7023794,
       "longitude": -84.4803869
+    },
+    {
+      "name": "Alaina Suggs",
+      "university": "North Carolina A & T State University",
+      "year": "2024",
+      "city": "",
+      "state": "",
+      "latitude": 36.0780523,
+      "longitude": -79.7711093
     },
     {
       "name": "Alua Bekbossynova",
@@ -611,6 +629,15 @@
       "longitude": -78.674087
     },
     {
+      "name": "Layla Goudy",
+      "university": "North Carolina A & T State University",
+      "year": "2026",
+      "city": "",
+      "state": "",
+      "latitude": 36.0780523,
+      "longitude": -79.7711093
+    },
+    {
       "name": "Rupashi Gupta",
       "university": "Indiana University",
       "year": "2026",
@@ -861,6 +888,15 @@
         "longitude": -97.4457083
       },
       {
+        "name": "Elah Spence",
+        "university": "North Carolina A & T State University",
+        "year": "2023",
+        "city": "",
+        "state": "",
+        "latitude": 36.0780523,
+        "longitude": -79.7711093
+      },
+      {
         "name": "Katherine Thomas",
         "university": "University of Arkansas",
         "year": "2023",
@@ -933,6 +969,15 @@
         "state": "",
         "latitude": 42.7023794,
         "longitude": -84.4803869
+      },
+      {
+        "name": "Alaina Suggs",
+        "university": "North Carolina A & T State University",
+        "year": "2024",
+        "city": "",
+        "state": "",
+        "latitude": 36.0780523,
+        "longitude": -79.7711093
       },
       {
         "name": "Alua Bekbossynova",
@@ -1236,6 +1281,15 @@
         "longitude": -78.674087
       },
       {
+        "name": "Layla Goudy",
+        "university": "North Carolina A & T State University",
+        "year": "2026",
+        "city": "",
+        "state": "",
+        "latitude": 36.0780523,
+        "longitude": -79.7711093
+      },
+      {
         "name": "Rupashi Gupta",
         "university": "Indiana University",
         "year": "2026",
@@ -1255,5 +1309,5 @@
       }
     ]
   },
-  "generatedAt": "2026-06-16 10:32:27"
+  "generatedAt": "2026-11-09 22:02:16"
 }
